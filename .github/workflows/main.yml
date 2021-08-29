@@ -2,7 +2,7 @@ name: Print context
 on: push
 
 jobs:
-  Print context:
+  print-context:
     runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub context
