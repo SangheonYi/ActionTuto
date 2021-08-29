@@ -2,13 +2,13 @@ name: Print context
 on: push
 
 jobs:
-  one:
+  Print context:
     runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub context
         env:
-          PUSHER_NAME: github.event.pusher.name
-          PUSHER_EMAIL: github.event.pusher.email
+          PUSHER_NAME: ${{ github.event.pusher.name }}
+          PUSHER_EMAIL: ${{ github.event.pusher.email }}
         run: |
           echo "$PUSHER_NAME"
           echo "$PUSHER_EMAIL"
