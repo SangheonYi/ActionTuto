@@ -1,5 +1,6 @@
 name: Print context
 on: push
+  branches: [test_on]
 
 jobs:
   print-context:
@@ -12,5 +13,5 @@ jobs:
         run: |
           echo "$PUSHER_NAME"
           echo "$PUSHER_EMAIL"
-          
+
 
