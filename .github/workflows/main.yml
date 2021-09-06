@@ -1,6 +1,7 @@
 name: Print context
-on: push
-  branches: [test_on]
+on: 
+  push:
+    branches: [ test_on ]
 
 jobs:
   print-context:
